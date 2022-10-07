@@ -55,7 +55,7 @@ const Work = () => {
                                 </a> */}
                                 <a href="/">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                    <a href='https://github.com/martinmagl/Dashboard-React-Infinity'>
+                                    <a href='https://github.com/martinmagl/React-Dashboard'>
                                     Code
                                     </a>
                                     </button>
@@ -69,7 +69,7 @@ const Work = () => {
                         {/* Hover Effects*/}
                         <div className='opacity-0 group-hover:opacity-100'>
                             <span className='text-2xl font-bold text-black tracking-wider'>
-                                Clan Mercado Liebre 
+                                Clan Mercado Libre 
                             </span>
                             <div className='pt-8 text-center'>
                                 {/* <a href="/">
