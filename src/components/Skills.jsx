@@ -9,16 +9,18 @@ import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
 import Bootstrap from '../assets/Bootstrap.png';
 import MySQL from '../assets/mysql.png';
-
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+    const [t] = useTranslation('global');
+
   return (
     <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
     {/* Container */}
 <div className='max-w--[1000px] mx-auto p-4 flex-col justify-center w-full h-full'>
 <div>
-    <p className='text-4xl font-bold inline border-b-4 border-[#00b4d8]'>Habilidades</p>
-    <p className='py-4'>Estas son algunas tecnologias con las que he trabajado </p>
+    <p className='text-4xl font-bold inline border-b-4 border-[#00b4d8]'>{t("skills.skills")}</p>
+    <p className='py-4'>{t("skills.p")}</p>
 </div>
 
 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>

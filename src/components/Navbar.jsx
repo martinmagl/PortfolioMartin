@@ -5,16 +5,20 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Logo from '../assets/logo.png'
 import { Link } from 'react-scroll'
 import Resume from '../assets/CV-MartinEsteves.pdf'
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
 
+    const [t, i18n] = useTranslation('global');
+
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#060d18] text-gray-300'>
             <div>
-            <img src={Logo} alt='Logo' style={{ width: '75px' }} />
+                <img src={Logo} alt='Logo' style={{ width: '75px' }} />
             </div>
 
             {/* menu */}
@@ -22,29 +26,35 @@ const Navbar = () => {
                 <ul className="hidden md:flex">
                     <li className='text-xl hover:border-b-2'>
                         <Link to="home" smooth={true} duration={500}>
-                            Inicio
+                            {t("navbar.home")}
                         </Link>
                     </li>
                     <li className='text-xl hover:border-b-2'>
                         <Link to="about" smooth={true} duration={500}>
-                            Sobre Mi
+                            {t("navbar.about")}
                         </Link>
                     </li>
                     <li className='text-xl hover:border-b-2'>
                         <Link to="skills" smooth={true} duration={500}>
-                            Habilidades
+                            {t("navbar.skills")}
                         </Link>
                     </li>
                     <li className='text-xl hover:border-b-2'>
                         <Link to="work" smooth={true} duration={500}>
-                            Experiencia
+                            {t("navbar.work")}
                         </Link>
                     </li>
                     <li className='text-xl hover:border-b-2'>
                         <Link to="contact" smooth={true} duration={500}>
-                            Contacto
+                            {t("navbar.contact")}
                         </Link>
                     </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><button onClick={() => i18n.changeLanguage('es')}>ES</button></li>
+                    <li><button onClick={() => i18n.changeLanguage('en')}>EN</button></li>
                 </ul>
             </div>
 
@@ -73,9 +83,9 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="py-6 text-4xl">
-                    <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-                        Experiencia
-                    </Link>
+                        <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+                            Experiencia
+                        </Link>
                     </li>
                     <li className="py-6 text-4xl">
                         <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
@@ -109,7 +119,7 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565F69] '>
                         <a className='flex justify-between items-center w-full text-gray-300'
                             href={Resume} download>
-                            Resume <BsFillPersonLinesFill size={30} />
+                            {t("navbar.cv")} <BsFillPersonLinesFill size={30} />
                         </a>
                     </li>
                 </ul>
