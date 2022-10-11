@@ -23,9 +23,10 @@
         "p": "These are some technologies with which I have worked"
             },
             "work":{
-        
+        "work": "Work"
             },
             "contact":{
-        
+                "contact":"Contact",
+                "p":"*Any questions, doubts or recommendations, send me a message."
             }
 }

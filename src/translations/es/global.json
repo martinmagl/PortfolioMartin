@@ -15,7 +15,7 @@
     "home":{
 "pname": "Mi nombre es",
 "h1": "Martin Esteves",
-"h2":"Programador Full Stack.",
+"h2":"Programador Web Full Stack.",
 "button": "Ver Trabajos"
     },
     "skills":{
@@ -23,9 +23,10 @@
 "p": "Estas son algunas tecnologias con las que he trabajado"
     },
     "work":{
-
+        "work": "Experiencia"
     },
     "contact":{
-
+"contact":"Contacto",
+"p":"*Cualquier consulta, duda o recomendacion, enviame un mensaje."
     }
 }

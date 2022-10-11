@@ -52,10 +52,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div>
-                <ul>
-                    <li><button onClick={() => i18n.changeLanguage('es')}>ES</button></li>
+            <ul>
+                    <li><button className='py-1 ' onClick={() => i18n.changeLanguage('es')}>ES</button></li>
                     <li><button onClick={() => i18n.changeLanguage('en')}>EN</button></li>
-                </ul>
+            </ul>
             </div>
 
             {/* Hamburger */}
