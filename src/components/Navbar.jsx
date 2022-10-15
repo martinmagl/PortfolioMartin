@@ -12,7 +12,7 @@ const Navbar = () => {
 
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
-
+    const [dropdownOpen, setdropdownOpen] = useState(false);
     const [t, i18n] = useTranslation('global');
 
     return (
@@ -51,12 +51,21 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div>
-            <ul>
-                    <li><button className='py-1 ' onClick={() => i18n.changeLanguage('es')}>ES</button></li>
-                    <li><button onClick={() => i18n.changeLanguage('en')}>EN</button></li>
-            </ul>
-            </div>
+           
+              <div>
+              <div  
+              onClick={() => setdropdownOpen(!dropdownOpen)}
+                            className="hover:cursor-pointer border-b-2 bg-[#0f6d80] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                           {t("navbar.idioma")}
+                        </div>
+                        <div
+                            className={`${dropdownOpen ? `top-13` : ' invisible opacity-0'} absolute `}>
+                            <ul>
+                                <li><button className='hover:border-b-2' onClick={() => i18n.changeLanguage('es')}>ES</button></li>
+                                <li><button className='hover:border-b-2' onClick={() => i18n.changeLanguage('en')}>EN</button></li>
+                            </ul>
+                        </div>
+              </div>
 
             {/* Hamburger */}
 

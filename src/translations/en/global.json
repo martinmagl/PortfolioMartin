@@ -5,7 +5,8 @@
         "skills":"Skills",
         "work": "Work",
         "contact": "Contact",
-        "cv": "Resume"
+        "cv": "Resume",
+        "idioma": "Language"
     },
     "about": {
         "about": "About",

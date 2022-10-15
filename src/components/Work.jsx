@@ -10,7 +10,17 @@ const Work = () => {
     return (
         <div name='work' className='w-full sm:h-screen text-gray-300 bg-[#0a192f]'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-                <div className='pb-8'>
+                <div className='pb-8 mb-5'>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                     <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-[#00b4d8]'>{t("work.work")}</p>
                     {/* <p className='py-6'>Mira mis trabajos recientes</p> */}
                 </div>
@@ -23,7 +33,7 @@ const Work = () => {
 
                         {/* Hover Effects*/}
                         <div className='opacity-0 group-hover:opacity-100'>
-                            <span className='text-2xl font-bold text-white tracking-wider'>
+                            <span className='text-2xl font-bold text-black tracking-wider'>
                                 Infinity Store
                             </span>
                             <div className='pt-8 text-center'>
