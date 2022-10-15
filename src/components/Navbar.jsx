@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaBars, FaTimes, FaGithub, FaLinkedin , FaInstagram} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Logo from '../assets/logo.png'
@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#060d18] text-gray-300'>
             <div>
-            <a href="/home"><img src={Logo} alt='Logo' style={{ width: '75px' }} /></a>
+            <a href="/home" ><img src={Logo} alt='Logo' style={{ width: '75px' }} /></a>
             </div>
 
             {/* menu */}
@@ -103,14 +103,19 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-
             {/*Social Icons*/}
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 '>
                         <a className='flex justify-between items-center w-full text-gray-300'
                             href='https://www.linkedin.com/in/martinmagl/'>
-                            Linkedin  <FaLinkedin size={30} />
+                            LinkedIn  <FaLinkedin size={30} />
+                        </a>
+                    </li>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#db7777] '>
+                        <a className='flex justify-between items-center w-full text-gray-300'
+                            href='https://www.instagram.com/martinmagl/'>
+                            Instagram  <FaInstagram size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] '>
