@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes, FaGithub, FaLinkedin , FaInstagram} from 'react-icons/fa'
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import Logo from '../assets/logo.png'
@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#060d18] text-gray-300'>
             <div>
-            <a href="/" ><img src={Logo} alt='Logo' style={{ width: '75px' }} /></a>
+                <a href="/" ><img src={Logo} alt='Logo' style={{ width: '75px' }} /></a>
             </div>
 
             {/* menu */}
@@ -51,21 +51,20 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-           
-              <div>
-              <div  
-              onClick={() => setdropdownOpen(!dropdownOpen)}
-                            className="hover:cursor-pointer border-b-2 bg-[#0f6d80] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                           {t("navbar.idioma")}
-                        </div>
-                        <div
-                            className={`${dropdownOpen ? `top-13` : ' invisible opacity-0'} absolute `}>
-                            <ul>
-                                <li><button className='hover:border-b-2' onClick={() => i18n.changeLanguage('es')}>ES</button></li>
-                                <li><button className='hover:border-b-2' onClick={() => i18n.changeLanguage('en')}>EN</button></li>
-                            </ul>
-                        </div>
-              </div>
+
+            <div>
+                <div
+                    onClick={() => setdropdownOpen(!dropdownOpen)}
+                    className="hover:cursor-pointer border-2 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full">
+                    {t("navbar.idioma")}
+                </div>
+                <div className={`${dropdownOpen ? `top-13` : ' invisible opacity-0'} absolute `}>
+                    <ul>
+                        <li><button className='hover:border-b-2' onClick={() => i18n.changeLanguage('es')}>ES</button></li>
+                        <li><button className='hover:border-b-2' onClick={() => i18n.changeLanguage('en')}>EN</button></li>
+                    </ul>
+                </div>
+            </div>
 
             {/* Hamburger */}
 
