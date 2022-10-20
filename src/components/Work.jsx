@@ -29,7 +29,7 @@ const Work = () => {
 
                     {/* Grid Item */}
                     <div style={{ backgroundImage: `url(${Proyecto01})` }}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div hover:scale-110 duration-500'>
 
                         {/* Hover Effects*/}
                         <div className='opacity-0 group-hover:opacity-100'>
@@ -53,7 +53,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div style={{ backgroundImage: `url(${dashboard})` }}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div hover:scale-110 duration-500'>
 
                         {/* Hover Effects*/}
                         <div className='opacity-0 group-hover:opacity-100'>
@@ -77,7 +77,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div style={{ backgroundImage: `url(${MercadoLiebre})` }}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div hover:scale-110 duration-500'>
 
                         {/* Hover Effects*/}
                         <div className='opacity-0 group-hover:opacity-100'>

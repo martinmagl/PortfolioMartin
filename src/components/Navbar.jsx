@@ -55,7 +55,7 @@ const Navbar = () => {
             <div>
                 <div
                     onClick={() => setdropdownOpen(!dropdownOpen)}
-                    className="hover:cursor-pointer border-2 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full">
+                    className="hover:cursor-pointer border-2 text-white font-bold py-2 px-4 rounded-full">
                     {t("navbar.idioma")}
                 </div>
                 <div className={`${dropdownOpen ? `top-13` : ' invisible opacity-0'} absolute `}>
