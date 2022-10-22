@@ -24,27 +24,27 @@ const Navbar = () => {
             {/* menu */}
             <div className="hidden md:flex">
                 <ul className="hidden md:flex">
-                    <li className='text-xl hover:border-b-2'>
+                    <li className='text-xl hover:border-b-2 rounded-full'>
                         <Link to="home" smooth={true} duration={500}>
                             {t("navbar.home")}
                         </Link>
                     </li>
-                    <li className='text-xl hover:border-b-2'>
+                    <li className='text-xl hover:border-b-2 rounded-full'>
                         <Link to="about" smooth={true} duration={500}>
                             {t("navbar.about")}
                         </Link>
                     </li>
-                    <li className='text-xl hover:border-b-2'>
+                    <li className='text-xl hover:border-b-2 rounded-full'>
                         <Link to="skills" smooth={true} duration={500}>
                             {t("navbar.skills")}
                         </Link>
                     </li>
-                    <li className='text-xl hover:border-b-2'>
+                    <li className='text-xl hover:border-b-2 rounded-full'>
                         <Link to="work" smooth={true} duration={500}>
                             {t("navbar.work")}
                         </Link>
                     </li>
-                    <li className='text-xl hover:border-b-2'>
+                    <li className='text-xl hover:border-b-2 rounded-full'>
                         <Link to="contact" smooth={true} duration={500}>
                             {t("navbar.contact")}
                         </Link>
@@ -53,11 +53,13 @@ const Navbar = () => {
             </div>
 
             <div>
-                <div
+             {/* cuando quiero que me aparezca el boton para cambiar los idiomas  */}
+
+                {/* <div
                     onClick={() => setdropdownOpen(!dropdownOpen)}
                     className="hover:cursor-pointer border-2 text-white font-bold py-2 px-4 rounded-full">
                     {t("navbar.idioma")}
-                </div>
+                </div> */}
                 <div className={`${dropdownOpen ? `top-13` : ' invisible opacity-0'} absolute `}>
                     <ul>
                         <li><button className='hover:border-b-2' onClick={() => i18n.changeLanguage('es')}>ES</button></li>
